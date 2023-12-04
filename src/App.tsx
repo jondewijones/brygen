@@ -17,8 +17,7 @@ function App() {
 
 	return (
 		<>
-			<h1>Brygen app!!</h1>
-			<p>{name}</p>
+			<p className="generated-name">{name}</p>
 			<button onClick={handleGenerate} disabled={disabled}>Generate</button>
 		</>
 	)
