@@ -17,7 +17,7 @@ const getAuxVerb = (): string => {
         "could",
         "couldnt",
         "may",
-        "naynot",
+        "maynot",
         "might",
         "mightnot",
         "must",
