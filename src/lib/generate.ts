@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 
 const ADJECTIVE_API_URL: string = "https://random-word-form.repl.co/random/adjective";
 
@@ -29,14 +29,14 @@ const getAuxVerb = (): string => {
         "would",
         "wouldnt"
     ]
-    const random: int = Math.floor(Math.random() * auxileryVerbs.length)
+    const random: number = Math.floor(Math.random() * auxileryVerbs.length)
     return auxileryVerbs[random]
 }
 
 const getAdjective = (): Promise<string> => {
     return axios.get(ADJECTIVE_API_URL, {method: 'GET'})
-        .then(response => response.data[0])
-        .catch(error => error)
+        .then((response: AxiosResponse) => response.data[0])
+        .catch((error: any) => error)
 }
 
 export default generate
