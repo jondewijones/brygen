@@ -5,8 +5,8 @@ import generate from './lib/generate'
 import './App.css'
 
 function App() {
-	const [name, setName] = useState("")
-	const [disabled, setDislabled] = useState(false)
+	const [name, setName] = useState<string>("")
+	const [disabled, setDislabled] = useState<boolean>(false)
 
 	const handleGenerate = async (): Promise<void> => {
 		setDislabled(true)
