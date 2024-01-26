@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 
-const ADJECTIVE_API_URL: string = "https://random-word-form.repl.co/random/adjective";
+const ADJECTIVE_API_URL: string = "https://random-word-api.vercel.app/api?adjective";
 
 const generate = async (): Promise<string> => {
     const bry: string = "Bry";
